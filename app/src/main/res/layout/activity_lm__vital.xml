@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:titleTextAppearance="@style/Toolbar.TitleText"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+        <!--<include layout="@layout/header" />-->
+        <!--&lt;!&ndash;<android.support.v7.widget.Toolbar&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/toolbar"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="?attr/actionBarSize"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="?attr/colorPrimary"&ndash;&gt;-->
+            <!--&lt;!&ndash;app:popupTheme="@style/AppTheme.PopupOverlay" />&ndash;&gt;-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+    <!--<include layout="@layout/header1" />-->
+    <include layout="@layout/content_lm__vital" />
+    <!--<include layout="@layout/footer" />-->
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="42dp"-->
+        <!--android:layout_height="42dp"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:tint="#4E4F53"-->
+        <!--app:borderWidth="12dp"-->
+        <!--app:elevation="6dp"-->
+        <!--app:backgroundTint="#ABA584"-->
+        <!--android:scaleType="center"-->
+        <!--app:rippleColor="@android:color/black"-->
+        <!--app:srcCompat="@drawable/ho" />-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

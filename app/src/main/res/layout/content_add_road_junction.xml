@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rv1"
+    android:layout_marginTop="55dp"
+    android:background="#37448A"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+    <TextView
+        android:text="Road Junctions"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="16dp"
+        android:padding="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#f7f8f9"
+        android:textStyle="bold"
+        />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:elevation="4dp"
+                android:padding="10dp"
+                android:background="@drawable/btn_background"
+                android:id="@+id/relativeLayout">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/textView1"
+                            android:layout_height="wrap_content"
+                            android:text="PS Name :"
+                            android:textSize="12dp"
+                            android:textColor="#000"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tv_rj_psname"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="12dp"
+                            android:textColor="#dc0a0a"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tv_rj_time"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="10dp"
+                            android:textColor="#000"
+                            android:gravity="center_horizontal"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        >
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:textSize="12dp"
+                            android:inputType="text"
+                            android:paddingRight="22dp"
+                            android:id="@+id/et_rj_jName"
+                            android:digits="@string/title_allowalpha"
+
+                            android:paddingLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext_baground"
+                            android:hint="Junction Name"/>
+
+
+                    </LinearLayout>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/et_rj_lm"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:digits="@string/title_blockCharacterSet"
+
+                        android:background="@drawable/edittext_baground"
+                        android:hint="Landmark"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textSize="12dp"
+                        android:id="@+id/et_rj_dis"
+                        android:layout_marginTop="10dp"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:digits="@string/title_blockCharacterSet"
+
+                        android:background="@drawable/edittext_baground"
+                        android:hint="Remarks"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/et_rj_ln"
+                        android:inputType="text"
+                        android:digits="@string/title_blockCharacterSet"
+
+                        android:paddingLeft="10dp"
+                        android:background="@drawable/edittext_baground"
+                        android:hint="Location"/>
+
+                </LinearLayout>
+            </ScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_b"
+                    android:text="Reset"
+                    android:textAllCaps="false"
+                    android:textSize="16dp"
+                    android:id="@+id/btn_rj_reset"
+                    android:textColor="#f7f8f9"
+                    android:layout_weight="0.1"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_centerHorizontal="true"
+                    />
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"/>
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textSize="16dp"
+                    android:background="@drawable/btn_b"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:id="@+id/btn_rj_submit"
+                    android:textColor="#f7f8f9"
+                    android:layout_weight="0.1"
+
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_centerHorizontal="true"
+                    />
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"/>
+
+                <Button
+                    android:id="@+id/btn_rj_vl"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/btn_b"
+                    android:text="View List"
+                    android:textAllCaps="false"
+                    android:textColor="#f7f8f9"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/alert_"
+                    android:visibility="gone"
+                    android:src="@drawable/alert"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="#931e1e"
+                    android:id="@+id/tv_error_tr"
+                    android:textStyle="bold"
+                    android:text=" "
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:visibility="gone" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:padding="0dp"
+            android:visibility="gone">
+
+            <TextView
+
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="-5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="PS Name"
+                android:textColor="#374176"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:text=":"
+                android:textColor="#374176" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="-5dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_C_psname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="-5dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="#374176"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="2dp"
+            android:padding="0dp">
+
+            <TextView
+
+                android:id="@+id/textView3"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="-5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Crime No"
+                android:textColor="#374176"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:text=":"
+                android:textColor="#374176" />
+
+            <TextView
+                android:id="@+id/tv_C_hpName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="-5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#374176"
+                android:textSize="12dp" />
+
+
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:visibility="gone" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="2dp"
+            android:padding="0dp">
+
+            <TextView
+
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="-5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Crime Type"
+                android:textColor="#374176"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:text=":"
+                android:textColor="#374176" />
+
+
+            <TextView
+                android:id="@+id/tv_C_hpType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="-5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+
+                android:text=""
+                android:textColor="#374176"
+                android:textSize="12dp" />
+
+
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:visibility="gone" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="10dp"
+            android:padding="0dp"
+            android:visibility="gone">
+
+            <TextView
+
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="-5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Lattitude"
+                android:textColor="#374176"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:text=":"
+                android:textColor="#374176" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv1"-->
+            <!--android:layout_width="220dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="1dp"-->
+            <!--android:padding="5dp"-->
+            <!--android:text=" "-->
+            <!--android:layout_weight="0.3"-->
+            <!--android:layout_marginLeft="11dp"-->
+            <!--android:textColor="#3e2c2c"-->
+            <!--android:textSize="12dp" />-->
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="-5dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_C_lat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="#374176"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="10dp"
+            android:padding="0dp"
+            android:visibility="gone">
+
+            <TextView
+
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Longitude"
+                android:textColor="#374176"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text=":"
+                android:textColor="#374176" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv1"-->
+            <!--android:layout_width="220dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="1dp"-->
+            <!--android:padding="5dp"-->
+            <!--android:text=" "-->
+            <!--android:layout_weight="0.3"-->
+            <!--android:layout_marginLeft="11dp"-->
+            <!--android:textColor="#3e2c2c"-->
+            <!--android:textSize="12dp" />-->
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_C_lng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="#374176"
+                    android:textSize="12dp" />
+                <!--<ImageView-->
+                <!--android:id="@+id/occ"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:scaleType="fitXY"-->
+                <!--android:src="@drawable/icon" />-->
+
+                <!--<com.toptoche.searchabledpinnerlibrary.SearchableSpinner-->
+                <!--android:id="@+id/dp_occ"-->
+                <!--style="@style/MyAlertDialogStyle"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_margin="1dp"-->
+                <!--android:layout_toRightOf="@+id/occ"-->
+                <!--android:layout_weight="0.5"-->
+                <!--android:background="#374176"-->
+                <!--android:drawableLeft="@drawable/icon"-->
+                <!--android:gravity="center"-->
+                <!--android:inputType="text"-->
+                <!--android:popupBackground="#9f9a9a"-->
+                <!--android:textColor="#000"-->
+                <!--android:textSize="12dp"-->
+                <!--app:hintText="Select Occupation" />-->
+
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp">
+
+            <ImageView
+                android:id="@+id/imageView_status"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0"
+                android:visibility="gone" />
+
+            <TextView
+
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Locality"
+                android:textColor="#374176"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0"
+                android:text=":"
+                android:textColor="#374176" />
+
+
+            <TextView
+                android:id="@+id/tv_C_locality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#374176"
+                android:textSize="12dp" />
+
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="10dp"
+            android:padding="0dp"
+            android:visibility="gone">
+
+            <TextView
+
+
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Date and Time"
+                android:textColor="#374176"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text=":"
+                android:textColor="#374176" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv1"-->
+            <!--android:layout_width="220dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="1dp"-->
+            <!--android:padding="5dp"-->
+            <!--android:text=" "-->
+            <!--android:layout_weight="0.3"-->
+            <!--android:layout_marginLeft="11dp"-->
+            <!--android:textColor="#3e2c2c"-->
+            <!--android:textSize="12dp" />-->
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_C_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="#374176"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

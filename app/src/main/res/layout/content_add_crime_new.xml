@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#37448A"
+    android:layout_marginTop="55dp"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="Crime Data Entry"
+        android:textColor="#f0f4f5"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/relativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/btn_background"
+                android:elevation="4dp"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="PS Name :"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tv_c__psname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textColor="#dc0a0a"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tv_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textColor="#000"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_c_cno"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext_baground"
+                            android:hint="Crime No Ex : 0612"
+                            android:inputType="numberDecimal|numberSigned"
+                            android:maxLength="4"
+                            android:paddingLeft="10dp"
+                            android:textSize="12dp" />
+
+                        <!--<EditText-->
+                        <!--android:id="@+id/et_c_cno"-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:textStyle="normal"-->
+                        <!--android:paddingLeft="12dp"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:drawableTint="#000000"-->
+                        <!--android:hint="Crime No Ex:0612/12"-->
+                        <!--android:layout_weight="0.5"-->
+                        <!--android:textSize="12dp"-->
+                        <!--android:inputType="number" />-->
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/et_c_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_baground"
+                        android:hint="Crime Year Ex : 2017"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:maxLength="4"
+                        android:paddingLeft="10dp"
+                        android:textSize="12dp"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:id="@+id/lay1out1"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_baground">
+
+                        <ImageView
+                            android:id="@+id/imag1eView1"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/crimee" />
+
+                        <Spinner
+                            android:id="@+id/spin_year"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/imag1eView1"
+                            android:padding="1dp"
+                            android:popupBackground="#f7f8f9"
+                            android:textSize="12dp" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/Bt_c_Year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="38dp"
+                            android:layout_below="@+id/relativeLayout"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="0.1"
+                            android:background="@drawable/btn_background"
+                            android:text="Crime Year"
+                            android:textAllCaps="false"
+                            android:textColor="#2a3f54"
+                            android:textSize="12dp" />
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="4dp" />
+
+                        <Button
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/relativeLayout"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="0.1"
+                            android:background="@drawable/btn_background"
+                            android:text="Crime Time"
+                            android:textAllCaps="false"
+                            android:textColor="#2a3f54"
+                            android:textSize="12dp"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/layout1"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext_baground">
+
+                            <ImageView
+                                android:id="@+id/imageView1"
+                                android:layout_width="26dp"
+                                android:layout_height="26dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/crimee" />
+
+                            <Spinner
+                                android:id="@+id/spin_CrimeType"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/imageView1"
+                                android:padding="1dp"
+                                android:popupBackground="#f7f8f9"
+                                android:textSize="12dp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_sp_sct"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext_baground"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="26dp"
+                                android:layout_height="26dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/crimee" />
+
+                            <Spinner
+                                android:id="@+id/spin_Crimesubcatogry"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/imageView2"
+                                android:padding="1dp"
+                                android:popupBackground="#f7f8f9" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btn_c_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="38dp"
+                                android:layout_below="@+id/relativeLayout"
+                                android:layout_centerHorizontal="true"
+                                android:layout_weight="0.1"
+                                android:background="@drawable/btn_background"
+                                android:text="Crime Date and Time"
+                                android:textAllCaps="false"
+                                android:textColor="#2a3f54"
+                                android:textSize="12dp" />
+
+                            <View
+                                android:layout_width="4dp"
+                                android:layout_height="4dp" />
+
+                            <Button
+                                android:id="@+id/btn_c_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_below="@+id/relativeLayout"
+                                android:layout_centerHorizontal="true"
+                                android:layout_weight="0.1"
+                                android:background="@drawable/btn_background"
+                                android:text="Crime Time"
+                                android:textAllCaps="false"
+                                android:textColor="#2a3f54"
+                                android:textSize="12dp"
+                                android:visibility="gone" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/Bt_c_dateReport"
+                                android:layout_width="wrap_content"
+                                android:layout_height="38dp"
+                                android:layout_below="@+id/relativeLayout"
+                                android:layout_centerHorizontal="true"
+                                android:layout_weight="0.1"
+                                android:background="@drawable/btn_background"
+                                android:text="Date Of Report"
+                                android:textAllCaps="false"
+                                android:textColor="#2a3f54"
+                                android:textSize="12dp" />
+
+                            <View
+                                android:layout_width="4dp"
+                                android:layout_height="4dp" />
+
+                            <Button
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_below="@+id/relativeLayout"
+                                android:layout_centerHorizontal="true"
+                                android:layout_weight="0.1"
+                                android:background="@drawable/btn_background"
+                                android:text="Crime Time"
+                                android:textAllCaps="false"
+                                android:textColor="#2a3f54"
+                                android:textSize="12dp"
+                                android:visibility="gone" />
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext_baground">
+
+                            <ImageView
+                                android:id="@+id/imageVie"
+                                android:layout_width="26dp"
+                                android:layout_height="26dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/crimee" />
+
+                            <Spinner
+                                android:id="@+id/spin_detected"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/imageVie"
+                                android:padding="1dp"
+                                android:popupBackground="#f7f8f9" />
+
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/et_c_locality"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="10dp"
+                            android:digits="@string/title_blockCharacterSet"
+                            android:background="@drawable/edittext_baground"
+                            android:hint=" Locality"
+                            android:paddingLeft="10dp"
+                            android:textSize="12dp" />
+
+                        <RelativeLayout
+                            android:id="@+id/Layout10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:background="#f4f4f4">
+
+                            <EditText
+                                android:id="@+id/et_CrimeDiscription"
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:digits="@string/title_blockCharacterSet"
+                                android:background="@drawable/edittext_baground"
+                                android:gravity="start"
+
+                                android:hint="Description"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="5dp"
+                                android:textSize="12dp" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_c_reset"
+                    android:layout_width="40dp"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/btn_b"
+                    android:text="Reset"
+                    android:textAllCaps="false"
+                    android:textColor="#f7f8f9"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp" />
+
+                <Button
+                    android:id="@+id/btn_c_submit"
+                    android:layout_width="40dp"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/btn_b"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="#f7f8f9"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp" />
+
+                <Button
+
+                    android:id="@+id/button2"
+                    android:layout_width="40dp"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/btn_b"
+                    android:text="View List"
+                    android:textAllCaps="false"
+                    android:textColor="#f7f8f9"
+                    android:textSize="16dp"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp" />
+
+                <Button
+                    android:id="@+id/btn_c_vl"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/btn_b"
+                    android:text="View Saved Data"
+                    android:textAllCaps="false"
+                    android:textColor="#f7f8f9"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp" />
+
+
+                <Button
+                    android:id="@+id/btn_c_offline"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/btn_b"
+                    android:text="View Offline Data"
+                    android:textAllCaps="false"
+                    android:textColor="#f7f8f9"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/alert_"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/alert"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_error_tr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#931e1e"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/ic_home"
+            android:title="Dashboard" />
+    </group>
+
+    <item
+        android:id="@+id/nav_View"
+        android:icon="@mipmap/ic_tslogo"
+        android:title="View" />
+
+    <item android:title="Analytics"
+        android:visible="false"
+        android:id="@+id/nav_Analytics"
+        android:icon="@mipmap/ic_tslogo"/>
+
+    <item
+        android:id="@+id/nav_spatial"
+        android:icon="@mipmap/ic_tslogo"
+        android:visible="false"
+        android:title="Spatial" />
+    <item
+        android:id="@+id/nav_DataEntry"
+        android:icon="@mipmap/ic_tslogo"
+        android:title="DataEntry" />
+
+    <item android:title="Settings">
+
+
+        <menu>
+
+
+            -
+            <group
+                android:checkableBehavior="single"
+                android:icon="@mipmap/ic_settings">
+
+                <item
+                    android:id="@+id/nav_resetpassword"
+                    android:icon="@mipmap/ic_logout"
+                    android:title="Reset Password"
+                    android:visible="false" />
+
+                <item
+                    android:id="@+id/nav_contact"
+                    android:icon="@mipmap/ic_tslogo"
+                    android:title="Contact Us" />
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@mipmap/ic_logout"
+                    android:title="Logout" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>

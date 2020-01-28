@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#37448A"
+    android:gravity="bottom|center"
+    android:padding="2dp"
+    android:layout_gravity="bottom|center"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:text=" a tecdatum product"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textSize="12dp"
+        android:visibility="gone"
+        android:src="@drawable/kite"
+        android:layout_gravity="bottom|center"
+        android:gravity="bottom|center"
+        android:textColor="#090968"
+        android:textStyle="normal"
+        />
+
+    <TextView
+        android:text=" a tecdatum product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_gravity="bottom|center"
+        android:gravity="bottom|center"
+        android:textColor="#fff"
+        android:textStyle="normal"
+        />
+
+    <TextView
+        android:text="Copyright © 2018"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#f0f4f5"
+        android:layout_marginTop="1dp"
+        android:textStyle="normal"
+        />
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="8dp"
+        android:id="@+id/tv_VersionCode"
+        android:layout_gravity="bottom|center"
+        android:gravity="bottom|center"
+        android:textColor="#fff"
+        android:textStyle="normal"
+        />
+</LinearLayout>

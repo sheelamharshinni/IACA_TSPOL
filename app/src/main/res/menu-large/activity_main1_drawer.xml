@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    -
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+
+            android:icon="@mipmap/ic_home"
+            android:title="Home" />
+
+    </group>
+
+
+    <item
+        android:id="@+id/nav_dataentry"
+        android:title="Data Entry">
+
+
+        <menu>
+
+            <group
+                android:checkableBehavior="single"
+                android:icon="@mipmap/ic_add">
+
+                <item
+                    android:id="@+id/nav_crime"
+                    android:icon="@mipmap/ic_tslogo"
+                    android:title="Crime" />
+
+                <item
+                    android:id="@+id/nav_Accident"
+                    android:icon="@mipmap/ic_tslogo"
+                    android:title="Accident" />
+
+                <item
+                    android:id="@+id/nav_Religious"
+                    android:icon="@mipmap/ic_tslogo"
+                    android:title="Landmark" />
+
+                <item
+                    android:id="@+id/nav_Landmarks"
+                    android:icon="@mipmap/ic_tslogo"
+                    android:title="Traffic Data" />
+
+                <item
+                    android:id="@+id/nav_History"
+                    android:icon="@mipmap/ic_tslogo"
+                    android:title="History Sheets" />
+
+                <item
+                    android:id="@+id/nav_CCTV"
+                    android:icon="@mipmap/ic_tslogo"
+                    android:title="CCTV" />
+                <item
+                    android:id="@+id/nav_NenuSaithamCCTV"
+                    android:icon="@mipmap/ic_tslogo"
+                    android:title="NenuSaitham CCTV" />
+                <item
+                    android:id="@+id/nav_pCCTV"
+                    android:icon="@mipmap/ic_tslogo"
+                    android:title="Proposed CCTV"
+                    android:visible="false" />
+
+                <item
+                    android:id="@+id/nav_hp"
+                    android:icon="@mipmap/ic_tslogo"
+                    android:title="Halting Points" />
+
+                <item
+                    android:id="@+id/nav_update"
+                    android:icon="@mipmap/ic_tslogo"
+                    android:title="Update Crime/Accident"
+                    />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+
+    -
+    <item
+        android:id="@+id/nav_viewrecords"
+        android:title="View Records">
+
+
+        -
+        <menu>
+
+
+            -
+            <group
+                android:checkableBehavior="single"
+                android:icon="@mipmap/ic_add">
+
+                <item
+                    android:id="@+id/nav_crime1"
+                    android:icon="@mipmap/ic_tslogo"
+                    android:title="Crime" />
+
+                <item
+                    android:id="@+id/nav_Accident1"
+                    android:icon="@mipmap/ic_tslogo"
+                    android:title="Accident" />
+
+                <item
+                    android:id="@+id/nav_Religious1"
+                    android:icon="@mipmap/ic_tslogo"
+                    android:title="Landmark"
+                     />
+
+                <item
+                    android:id="@+id/nav_Landmarks1"
+                    android:icon="@mipmap/ic_tslogo"
+                    android:title="Traffic Data" />
+
+                <item
+                    android:id="@+id/nav_History1"
+                    android:icon="@mipmap/ic_tslogo"
+                    android:title="History Sheets" />
+
+                <item
+                    android:id="@+id/nav_CCTV1"
+                    android:icon="@mipmap/ic_tslogo"
+                    android:title="CCTV" />
+                <item
+                    android:id="@+id/nav_NenuSaithamCCTV1"
+                    android:icon="@mipmap/ic_tslogo"
+                    android:title="NenuSaitham CCTV" />
+                <item
+                    android:id="@+id/nav_pCCTV1"
+                    android:icon="@mipmap/ic_tslogo"
+                    android:title="Proposed CCTV"
+                    android:visible="false" />
+
+                <item
+                    android:id="@+id/nav_hp1"
+                    android:icon="@mipmap/ic_tslogo"
+                    android:title="Halting Points"
+                    android:visible="false" />
+
+                <item
+                    android:id="@+id/nav_update1"
+                    android:visible="false"
+                    android:icon="@mipmap/ic_tslogo"
+                    android:title="Update Crime/Accident" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+
+    -
+    <item
+        android:title="Analytics"
+        android:visible="false">
+
+
+        -
+        <menu>
+
+
+            -
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_crime0"
+                    android:icon="@mipmap/ic_tslogo"
+                    android:title="Crime" />
+
+                <item
+                    android:id="@+id/nav_Accident0"
+                    android:icon="@mipmap/ic_tslogo"
+                    android:title="Accident" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+
+    -
+    <item android:title="Settings">
+
+
+        -
+        <menu>
+
+
+            -
+            <group
+                android:checkableBehavior="single"
+                android:icon="@mipmap/ic_settings">
+
+                <item
+                    android:id="@+id/nav_resetpassword"
+                    android:icon="@mipmap/ic_logout"
+                    android:title="Reset Password"
+                    android:visible="false" />
+
+                <item
+                    android:id="@+id/nav_contact"
+                    android:icon="@mipmap/ic_tslogo"
+                    android:title="Contact Us" />
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@mipmap/ic_logout"
+                    android:title="Logout" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>

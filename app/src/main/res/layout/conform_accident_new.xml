@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_b"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Preview"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#fff"
+        android:textSize="14dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="12dp"
+        android:layout_weight="0.09">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.09"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="1dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Crime No.(Accident No.)"
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_acc_cno"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="1dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Type of Offence "
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_typeofoffence"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="1dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Accident Status"
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="1dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Accident Date"
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_accdate"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="1dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Date Of Report "
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_dateofreport"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="1dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="No. of Injured Persons"
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_injuredpersons"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="1dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="No. of Deaths"
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_deaths"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="1dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Road Type"
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_roadtype"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="1dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Road Number"
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_roadnumber"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="1dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Road Geometry"
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_roadgeometry"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="1dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Victim Vehicle"
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_victimvehicle"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="1dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Victim Status"
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_victimstatus"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="1dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Victim Vehicle No"
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_victimvehicleno"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="1dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Victim Vehicle Manoeuver"
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_victimManoeuver"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="1dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Crime Vehicle"
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_crimevehicle"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="1dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Driver / Accused Status"
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_crimevstatus"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="1dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Crime Vehicle No"
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_crimevehicleno"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="1dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Crime Vehicle Manoeuver"
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_crimeManoeuver"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="1dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Type of Accident"
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_typeofaccident"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="1dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Location"
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_Location"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_acci_Confm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_b"
+                    android:text="Continue"
+                    android:textAllCaps="false"
+                    android:textColor="#f7f8f9" />
+
+                <View
+                    android:layout_width="60dp"
+                    android:layout_height="12dp" />
+
+                <Button
+                    android:id="@+id/tv_acci_Cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/btn_b"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="#f7f8f9" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="22dp" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

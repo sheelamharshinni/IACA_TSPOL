@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Accident Offline List"
+        android:textColor="#374176"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/search_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_baground"
+                android:gravity="center"
+                android:hint="Search(Ex.By Accident Type or Crime No.)"
+                android:padding="10dp"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/btn_refresh"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:layout_toRightOf="@+id/search_box"
+                android:layout_weight="0"
+                android:src="@mipmap/ic_sync" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_box"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="No Offline Data"
+            android:textAllCaps="false"
+            android:textColor="#374176"
+            android:textSize="14dp"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/item_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search_box"
+            android:layout_centerHorizontal="true"></ListView>
+    </LinearLayout>
+</LinearLayout>

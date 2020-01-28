@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">imCAP TSPOLICE</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_update_crime__acc">UpdateCrime_Acc</string>
+    <string name="title_activity_accident__offline_actvity">Accident_OfflineActvity</string>
+    <string name="title_activity_edit_accident_data">EditAccidentData</string>
+    <string name="title_activity_crime__offline_actvity">Crime_OfflineActvity</string>
+    <string name="title_activity_crime_offline_list">CrimeOfflineList</string>
+    <string name="title_activity_edit_crime_data">EditCrimeData</string>
+    <string name="title_activity_contact_us">ContactUs</string>
+    <string name="title_activity_reset_password">ResetPassword</string>
+    <string name="contact_add">Tecdatum Private Limited \n
+        Address:\n
+8-3-318/11/20, Level I
+Jaiprakash Nagar, Yellareddyguda,
+Hyderabad- 500 073
+INDIA\n
+Mail: info@tecdatum.in\n
+Contact Numbers:\n +91-40-2373 7008   Fax: +91-40-2373 7009
+</string>
+    <string name="contact_mail"> mailto  info@tecdatum.in
+Ph. +91-40-2373 7008   Fax: +91-40-2373 7009
+</string>
+    <string name="title_activity_view_crime">ViewCrime</string>
+    <string name="title_activity_view_accident">ViewAccident</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="title_activity_accident_vmore">AccidentVmore</string>
+    <string name="title_activity_crime_vmore">CrimeVmore</string>
+    <string name="title_activity_landmark_vmore">LandmarkVmore</string>
+    <string name="title_activity_traffic_vmore">TrafficVmore</string>
+    <string name="title_activity_hs_vmore">HsVmore</string>
+    <string name="title_activity_cctvvmore">CCTVVmore</string>
+
+    <string name="youAreNotUpdatedTitle">Update Available</string>
+    <string name="youAreNotUpdatedMessage">A new version of YOUR_APP_NAME is available. Please update to version\s</string>
+    <string name="youAreNotUpdatedMessage1">\s now</string>
+    <string name="update">Update</string>
+    <string name="title_activity_add_nenu_saitham_cctv">AddNenuSaithamCCTV</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_nenu_saitham_cctv">NenuSaithamCCTV</string>
+    <string name="title_activity_nenu_saitham_cctv_more">NenuSaithamCCtvMore</string>
+    <string name="title_activity_dataview">Dataview</string>
+
+    <string name="title_blockCharacterSet">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ , . # &amp;</string>
+    <string name="title_allowalpha">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ </string>
+    <string name="title_allownos">1234567890 </string>
+    <!--private String blockCharacterSet = "'~#^|$%&*!";-->
+</resources>

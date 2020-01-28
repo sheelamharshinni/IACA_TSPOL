@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:text="Edit Halting Point"
+        android:background="@drawable/btn_b"
+        android:textColor="#fff"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.09">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.09">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/at_hp_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="7dp"
+                    android:background="@drawable/edittext_baground"
+                    android:hint="Enter Halting Point"
+                    android:inputType="text"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:textColor="#302828"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:id="@+id/alert"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:text="Selected Halting Point Not Updated" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:id="@+id/lt_latlong"
+                android:visibility="gone"
+                android:layout_marginTop="10dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#50504E"/>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="2dp"
+                    android:padding="0dp">
+                    <TextView
+
+                        android:layout_width="160dp"
+                        android:layout_weight="0.3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:textColor="#302828"
+                        android:textSize="14dp"
+                        android:padding="5dp"
+                        android:text="Latitude " />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:text=":"/>
+
+                    <TextView
+                        android:id="@+id/at_hp_lat"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:padding="5dp"
+                        android:text=" "
+                        android:layout_weight="0.3"
+                        android:layout_marginLeft="11dp"
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+
+
+
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#50504E"/>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="2dp"
+                    android:padding="0dp">
+                    <TextView
+
+                        android:layout_width="160dp"
+                        android:layout_weight="0.3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:textColor="#302828"
+                        android:textSize="14dp"
+                        android:padding="5dp"
+                        android:text="Longitude " />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:text=":"/>
+
+                    <TextView
+                        android:id="@+id/at_hp_lng"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:padding="5dp"
+                        android:text=" "
+                        android:layout_weight="0.3"
+                        android:layout_marginLeft="11dp"
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:visibility="gone"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="2dp"
+                    android:padding="0dp">
+                    <TextView
+                        android:layout_width="160dp"
+                        android:layout_weight="0.3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:textColor="#302828"
+                        android:textSize="14dp"
+                        android:padding="5dp"
+                        android:text="Halting Point " />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:text=":"/>
+
+                    <TextView
+                        android:id="@+id/tv_hp_add"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:padding="5dp"
+                        android:text=" "
+                        android:layout_weight="0.3"
+                        android:layout_marginLeft="11dp"
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#50504E"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_hp_C_edit"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/btn_b"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="#f7f8f9" />
+
+                <View
+                    android:layout_width="60dp"
+                    android:layout_height="12dp" />
+
+                <Button
+                    android:id="@+id/btn_hp_C_Cancel"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/btn_b"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="#f7f8f9" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

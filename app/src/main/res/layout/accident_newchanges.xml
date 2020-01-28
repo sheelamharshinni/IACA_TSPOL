@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="60dp"
+    android:background="#34497B"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="Accident Data Entry"
+        android:textColor="#f0f4f5"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_background"
+                android:elevation="4dp"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Police Station:"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tv_accic_psname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textColor="#dc0a0a"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tv_acci_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textColor="#000"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <EditText
+                            android:id="@+id/et_crime_no"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1.2"
+                            android:background="@drawable/edittext_baground"
+                            android:hint="Crime No Ex:0612"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:paddingLeft="10dp"
+                            android:textSize="12dp" />
+
+
+                        <EditText
+                            android:id="@+id/et_year"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1.2"
+                            android:background="@drawable/edittext_baground"
+                            android:hint=" 2020"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:paddingLeft="10dp"
+                            android:text="2020"
+                            android:textSize="12dp" />
+
+                        <Button
+                            android:id="@+id/btn_verify"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="0.6"
+                            android:background="@drawable/btn_b"
+                            android:gravity="center"
+                            android:text="Verify"
+                            android:textAllCaps="false"
+                            android:textColor="#f7f8f9"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_baground">
+
+                        <ImageView
+                            android:id="@+id/imageVe"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/ic_accident" />
+
+                        <Spinner
+                            android:id="@+id/sp_accidentType"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/imageVe"
+                            android:padding="1dp"
+                            android:popupBackground="#f7f8f9" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_baground">
+
+                        <ImageView
+                            android:id="@+id/imageV"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/ic_accident" />
+
+                        <Spinner
+                            android:id="@+id/sp_detected"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/imageV"
+                            android:padding="1dp"
+                            android:popupBackground="#f7f8f9" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_acci_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_below="@+id/relativeLayout"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="0.1"
+                            android:background="@drawable/btn_background"
+                            android:text="Accident Date and Time"
+                            android:textAllCaps="false"
+                            android:textColor="#2a3f54"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/Bt_c_dateReport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="38dp"
+                            android:layout_below="@+id/relativeLayout"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="0.1"
+                            android:background="@drawable/btn_background"
+                            android:text="Date Of Report"
+                            android:textAllCaps="false"
+                            android:textColor="#2a3f54"
+                            android:textSize="12dp" />
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="4dp" />
+
+                        <Button
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/relativeLayout"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="0.1"
+                            android:background="@drawable/btn_background"
+                            android:text="Crime Time"
+                            android:textAllCaps="false"
+                            android:textColor="#2a3f54"
+                            android:textSize="12dp"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/et_noi"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_baground"
+                        android:hint=" No of Injured Persons "
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:textSize="12dp" />
+
+                    <EditText
+                        android:id="@+id/et_nod"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_baground"
+                        android:hint=" No of Deaths "
+                        android:inputType="number"
+                        android:paddingLeft="10dp"
+                        android:textSize="12dp" />
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_baground">
+
+                        <ImageView
+                            android:id="@+id/imageVie"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/ic_accident" />
+
+                        <Spinner
+                            android:id="@+id/sp_roadType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/imageVie"
+                            android:padding="1dp"
+                            android:popupBackground="#f7f8f9" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_roadnumberedit"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="5dp"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/et_roadnumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext_baground"
+                            android:hint="Road Number"
+                            android:paddingLeft="10dp"
+                            android:textSize="12dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_roadnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_baground">
+
+                        <ImageView
+                            android:id="@+id/imageVie_road"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/ic_accident" />
+
+                        <Spinner
+                            android:id="@+id/sp_roadnumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/imageVie_road"
+
+                            android:padding="1dp"
+                            android:popupBackground="#f7f8f9" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_baground">
+
+                        <ImageView
+                            android:id="@+id/imageVie_Geometry"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/ic_accident" />
+
+                        <Spinner
+                            android:id="@+id/sp_roadGeometry"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/imageVie_Geometry"
+
+                            android:padding="1dp"
+                            android:popupBackground="#f7f8f9" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_baground">
+
+                        <ImageView
+                            android:id="@+id/i1"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:scaleType="fitXY"
+
+                            android:src="@mipmap/ic_accident" />
+
+                        <Spinner
+                            android:id="@+id/sp_vc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/i1"
+
+                            android:padding="1dp"
+                            android:popupBackground="#f7f8f9" />
+                    </RelativeLayout>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:weightSum="3">
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Victim Status :"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:gravity="center">
+
+                            <RadioGroup
+                                android:id="@+id/rg_victimstatus"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rg_victimstatus_yes"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="#000"
+
+                                    android:text="Alcoholic"
+                                    android:textColor="#000"
+                                    android:textSize="12dp" />
+
+                                <RadioButton
+                                    android:id="@+id/rg_victimstatus_no"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="#000"
+                                    android:checked="true"
+                                    android:text="Non Alcoholic"
+                                    android:textColor="#000"
+                                    android:textSize="12dp" />
+
+
+                            </RadioGroup>
+
+                        </RelativeLayout>
+
+
+                    </TableRow>
+
+                    <RelativeLayout
+                        android:id="@+id/Layout9"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="5dp">
+
+                        <EditText
+                            android:id="@+id/VictAlocoPer"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext_baground"
+                            android:hint=" Victim Vehicle No."
+
+                            android:paddingLeft="10dp"
+
+                            android:textSize="12dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_baground">
+
+                        <ImageView
+                            android:id="@+id/i1_Manoeuver"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:scaleType="fitXY"
+
+                            android:src="@mipmap/ic_accident" />
+
+                        <Spinner
+                            android:id="@+id/sp_Manoeuver"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/i1_Manoeuver"
+
+                            android:padding="1dp"
+                            android:popupBackground="#f7f8f9" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_baground">
+
+                        <ImageView
+                            android:id="@+id/i3"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/ic_accident" />
+
+                        <Spinner
+                            android:id="@+id/sp_ac"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/i3"
+                            android:padding="1dp"
+                            android:popupBackground="#f7f8f9" />
+                    </RelativeLayout>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:weightSum="3">
+
+                        <TextView
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Driver / Accused Status :"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:gravity="center">
+
+                            <RadioGroup
+                                android:id="@+id/rg_Accusedstatus"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rg_Accusedstatus_yes"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="#000"
+
+                                    android:text="Alcoholic"
+                                    android:textColor="#000"
+                                    android:textSize="12dp" />
+
+                                <RadioButton
+                                    android:id="@+id/rg_Accusedstatus_no"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="#000"
+                                    android:checked="true"
+                                    android:text="Non Alcoholic"
+                                    android:textColor="#000"
+                                    android:textSize="12dp" />
+
+
+                            </RadioGroup>
+
+                        </RelativeLayout>
+
+
+                    </TableRow>
+
+                    <RelativeLayout
+                        android:id="@+id/Layout11"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="5dp"
+                        android:background="#f4f4f4">
+
+                        <EditText
+                            android:id="@+id/AccusedAlocoPer"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edittext_baground"
+                            android:hint="Crime Vehicle No."
+                            android:paddingLeft="10dp"
+
+                            android:textSize="12dp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_baground">
+
+                        <ImageView
+                            android:id="@+id/i1_Manoeuvercrime"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:scaleType="fitXY"
+
+                            android:src="@mipmap/ic_accident" />
+
+                        <Spinner
+                            android:id="@+id/sp_Manoeuvecrimer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/i1_Manoeuvercrime"
+
+                            android:padding="1dp"
+                            android:popupBackground="#f7f8f9" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_baground"
+                        >
+
+                        <ImageView
+                            android:id="@+id/i1_GetTypeOfAccident"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:scaleType="fitXY"
+
+                            android:src="@mipmap/ic_accident" />
+
+                        <Spinner
+                            android:id="@+id/sp_GetTypeOfAccident"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/i1_GetTypeOfAccident"
+                            android:padding="1dp"
+                            android:popupBackground="#f7f8f9" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_baground"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/i1_GetAccidentSpot"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:scaleType="fitXY"
+
+                            android:src="@mipmap/ic_accident" />
+
+                        <Spinner
+                            android:id="@+id/sp_GetAccidentSpot"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/i1_GetAccidentSpot"
+                            android:padding="1dp"
+                            android:popupBackground="#f7f8f9" />
+                    </RelativeLayout>
+
+
+                    <EditText
+
+                        android:id="@+id/et_Locality"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_baground"
+                        android:digits="@string/title_blockCharacterSet"
+                        android:enabled="false"
+                        android:hint="Locality"
+                        android:paddingLeft="10dp"
+                        android:textSize="12dp" />
+                    <EditText
+
+                        android:id="@+id/et_lattitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_baground"
+                        android:digits="@string/title_blockCharacterSet"
+                        android:enabled="false"
+                        android:hint="Locality"
+                        android:paddingLeft="10dp"
+                        android:textSize="12dp" />
+
+                    <EditText
+
+                        android:id="@+id/et_Longitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_baground"
+                        android:digits="@string/title_blockCharacterSet"
+                        android:enabled="false"
+                        android:hint="Locality"
+                        android:paddingLeft="10dp"
+                        android:textSize="12dp" />
+
+                    <CheckBox
+                        android:id="@+id/cb_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select All Cause of Accident Prone spot / Accident Spot:"
+                        android:textColor="#374176" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/ll_specification"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#80F5F1E0"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                    <RelativeLayout
+                        android:id="@+id/Layout10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:background="#f4f4f4">
+
+                        <EditText
+                            android:id="@+id/et_Description"
+                            android:layout_width="match_parent"
+                            android:layout_height="85dp"
+                            android:background="@drawable/edittext_baground"
+                            android:gravity="start"
+                            android:digits="@string/title_blockCharacterSet"
+                            android:hint=" Description"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="5dp"
+                            android:textSize="12dp" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="30dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_accid_reset"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@+id/relativeLayout"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="0.1"
+                            android:background="@drawable/btn_b"
+                            android:text="Reset"
+                            android:textAllCaps="false"
+                            android:textColor="#f7f8f9"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="4dp" />
+
+                        <Button
+                            android:id="@+id/btn_accid_submit"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@+id/relativeLayout"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="0.1"
+                            android:background="@drawable/btn_b"
+                            android:text="Submit"
+                            android:textAllCaps="false"
+                            android:textColor="#f7f8f9"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="4dp" />
+
+                        <Button
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+
+                            android:layout_below="@+id/relativeLayout"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="0.1"
+                            android:background="@drawable/btn_b"
+                            android:text="View List"
+                            android:textAllCaps="false"
+                            android:textColor="#f7f8f9"
+                            android:textSize="16sp"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="4dp" />
+
+
+                        <Button
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+
+                            android:layout_below="@+id/relativeLayout"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="0.1"
+                            android:background="@drawable/btn_b"
+                            android:text="View OfflineData"
+                            android:textAllCaps="false"
+                            android:textColor="#f7f8f9"
+                            android:textSize="16sp"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="4dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="30dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="4dp" />
+
+                        <Button
+                            android:id="@+id/btn_accid_vl"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@+id/relativeLayout"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="0.1"
+                            android:background="@drawable/btn_b"
+                            android:text="View Saved Data"
+                            android:textAllCaps="false"
+                            android:textColor="#f7f8f9"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="4dp" />
+
+
+                        <Button
+                            android:id="@+id/btn_accid_offline"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@+id/relativeLayout"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="0.1"
+                            android:background="@drawable/btn_b"
+                            android:text="View Offline Data"
+                            android:textAllCaps="false"
+                            android:textColor="#f7f8f9"
+                            android:textSize="16sp"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="4dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

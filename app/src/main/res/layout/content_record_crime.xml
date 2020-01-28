@@ -1,0 +1,308 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <TextView
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:gravity = "center"
+        android:padding = "5dp"
+        android:text = "Crime Records"
+        android:textSize="20dp"
+        android:textColor = "#362c2c" />
+
+    <LinearLayout
+        android:id = "@+id/relativeLayout1"
+        android:layout_width = "match_parent"
+        android:layout_height = "40dp"
+        android:background="@drawable/btn_b" >
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:text = "Type"
+            android:textColor = "#fff" />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+
+            android:gravity = "center"
+            android:text = "SubType"
+            android:textColor = "#fff"/>
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+
+            android:gravity = "center"
+
+            android:text = "Cdate"
+            android:textColor = "#fff" />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+
+            android:gravity = "center"
+            android:text = "More"
+            android:textColor = "#fff" />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width = "fill_parent"
+        android:layout_height = "wrap_content"
+        android:background = "@drawable/mapbag2" >
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "sNo"
+            android:id="@+id/tv_t1"
+            android:background="@drawable/mapbag2"
+            android:textColor = "#000000" />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "2"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "product"
+            android:id="@+id/tv_p1"
+            android:background="@drawable/mapbag2"
+            android:textColor = "#000000"/>
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1.5"
+            android:gravity = "center"
+            android:background="@drawable/mapbag2"
+            android:padding = "5dp"
+            android:id="@+id/tv_c1"
+            android:text = "category"
+            android:textColor = "#000000" />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:background="@drawable/mapbag2"
+            android:text = "More"
+            android:id="@+id/tv_m1"
+            android:textColor = "#000000" />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width = "fill_parent"
+        android:layout_height = "wrap_content"
+        android:background = "@drawable/mapbag2" >
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "sNo"
+            android:id="@+id/tv_t2"
+            android:background="@drawable/mapbag2"
+            android:textColor = "#000000" />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "2"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "product"
+            android:id="@+id/tv_p2"
+            android:background="@drawable/mapbag2"
+            android:textColor = "#000000"/>
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1.5"
+            android:gravity = "center"
+            android:background="@drawable/mapbag2"
+            android:padding = "5dp"
+            android:text = "category"
+            android:id="@+id/tv_c2"
+            android:textColor = "#000000" />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:background="@drawable/mapbag2"
+            android:text = "More"
+            android:id="@+id/tv_m2"
+            android:textColor = "#000000" />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width = "fill_parent"
+        android:layout_height = "wrap_content"
+        android:background = "@drawable/mapbag2" >
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "sNo"
+            android:id="@+id/tv_t3"
+            android:background="@drawable/mapbag2"
+            android:textColor = "#000000" />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "2"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "product"
+            android:id="@+id/tv_p3"
+            android:background="@drawable/mapbag2"
+            android:textColor = "#000000"/>
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1.5"
+            android:gravity = "center"
+            android:background="@drawable/mapbag2"
+            android:padding = "5dp"
+            android:text = "category"
+            android:id="@+id/tv_c3"
+            android:textColor = "#000000" />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:background="@drawable/mapbag2"
+            android:text = "More"
+            android:id="@+id/tv_m3"
+            android:textColor = "#000000" />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width = "fill_parent"
+        android:layout_height = "wrap_content"
+        android:background = "@drawable/mapbag2" >
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "sNo"
+            android:id="@+id/tv_t4"
+            android:background="@drawable/mapbag2"
+            android:textColor = "#000000" />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "2"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:id="@+id/tv_p4"
+            android:text = "product"
+            android:background="@drawable/mapbag2"
+            android:textColor = "#000000"/>
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1.5"
+            android:gravity = "center"
+            android:background="@drawable/mapbag2"
+            android:padding = "5dp"
+            android:text = "category"
+            android:id="@+id/tv_c4"
+            android:textColor = "#000000" />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:background="@drawable/mapbag2"
+            android:text = "More"
+            android:id="@+id/tv_m4"
+            android:textColor = "#000000" />
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width = "fill_parent"
+        android:layout_height = "wrap_content"
+        android:background = "@drawable/mapbag2" >
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "sNo"
+            android:id="@+id/tv_t5"
+            android:background="@drawable/mapbag2"
+            android:textColor = "#000000" />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "2"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "product"
+            android:id="@+id/tv_p5"
+            android:background="@drawable/mapbag2"
+            android:textColor = "#000000"/>
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1.5"
+            android:gravity = "center"
+            android:background="@drawable/mapbag2"
+            android:padding = "5dp"
+            android:text = "category"
+            android:id="@+id/tv_c5"
+            android:textColor = "#000000" />
+
+        <TextView
+            android:layout_width = "0dp"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:id="@+id/tv_m5"
+            android:background="@drawable/mapbag2"
+            android:text = "More"
+            android:textColor = "#000000" />
+    </LinearLayout>
+</LinearLayout>

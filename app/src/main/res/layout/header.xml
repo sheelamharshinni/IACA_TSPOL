@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="1dp"
+    android:background="@drawable/mapbag"
+    android:layout_height="52dip">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/l1"
+        android:scaleType="fitXY"
+        >
+        <ImageView
+            android:id="@+id/poster"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:src="@drawable/teslogo"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-20dp">
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#424188"
+                android:scaleType="fitCenter"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:gravity="center"
+                android:text="ANDHRA PRADESH POLICE"
+                android:layout_width="wrap_content"></TextView>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#424188"
+                android:scaleType="fitXY"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:text=""
+                android:visibility="gone"
+                android:layout_width="wrap_content"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="42dip"-->
+        <!--android:gravity="center"-->
+        <!--android:id="@+id/l1"-->
+        <!--android:background="@drawable/mapbag"-->
+        <!--android:scaleType="fitXY">-->
+        <!--<ImageView-->
+            <!--android:id="@+id/poster"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:src="@drawable/t1"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--/>-->
+        <!--<LinearLayout-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginRight="-52dp"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:weightSum="1">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/poste"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:src="@drawable/titlee"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginRight="103dp"-->
+                <!--android:scaleType="fitCenter" />-->
+
+            <!--<TextView android:layout_height="wrap_content"-->
+                <!--android:id="@+id/byTextView"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:textColor="#424188"-->
+                <!--android:textSize="12dp"-->
+                <!--android:scaleType="fitEnd"-->
+                <!--android:text=""-->
+                <!--android:layout_width="wrap_content"></TextView>-->
+
+
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rv1"
+    android:layout_marginTop="55dp"
+    android:background="#37448A"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+    <TextView
+        android:text="Proposed CCTV"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="16dp"
+        android:padding="3dp"
+        android:textColor="#f0f4f5"
+        android:textStyle="bold"/>
+    <ScrollView
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/relativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_background"
+                android:elevation="4dp"
+                android:padding="7dp">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/textView1"
+                            android:layout_height="wrap_content"
+                            android:text="PS Name :"
+                            android:textSize="12dp"
+                            android:textColor="#000"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tv_pcctv_psname"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="12dp"
+                            android:textColor="#dc0a0a"
+                            android:layout_weight="1" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tv_pcctv_time"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="10dp"
+                            android:textColor="#000"
+                            android:gravity="center_horizontal"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_baground"
+                        android:layout_centerVertical="true"
+                        >
+
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/pcctv_icon" />
+
+                        <Spinner
+                            android:id="@+id/spin_SchemeType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:popupBackground="#f7f8f9"
+                            android:layout_toRightOf="@+id/imageView2"
+                            android:padding="1dp" />
+                    </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textSize="12dp"
+                        android:id="@+id/et_pcctv_cg"
+                        android:layout_marginTop="10dp"
+                        android:inputType="text"
+                        android:visibility="gone"
+                        android:background="@drawable/edittext_baground"
+                        android:hint=" Community Group"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textSize="12dp"
+                        android:id="@+id/et_pcctv_sn"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:background="@drawable/edittext_baground"
+                        android:hint="Sector No"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/et_pcctv_pn"
+                        android:paddingLeft="10dp"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:background="@drawable/edittext_baground"
+                        android:hint="Pole No"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/et_pcctv_lm"
+                        android:paddingLeft="10dp"
+                        android:digits="@string/title_blockCharacterSet"
+
+                        android:inputType="text"
+                        android:background="@drawable/edittext_baground"
+                        android:hint="Landmark"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textSize="12dp"
+                        android:id="@+id/et_pcctv_ln"
+                        android:layout_marginTop="10dp"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:digits="@string/title_blockCharacterSet"
+
+                        android:background="@drawable/edittext_baground"
+                        android:hint="Location"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/et_pcctv_fixed"
+                        android:paddingLeft="10dp"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:background="@drawable/edittext_baground"
+                        android:hint="Fixed"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textSize="12dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/et_pcctv_ptz"
+
+                        android:inputType="numberDecimal|numberSigned"
+                        android:background="@drawable/edittext_baground"
+                        android:hint="PTZ"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textSize="12dp"
+                        android:id="@+id/et_pcctv_ir"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:background="@drawable/edittext_baground"
+                        android:hint="IR"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:textSize="12dp"
+                        android:id="@+id/et_pcctv_others"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:background="@drawable/edittext_baground"
+                        android:hint="Others"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginTop="7dp"
+                        />
+</LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="40dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_pcctv_reset"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/btn_b"
+                    android:text="Reset"
+                    android:textAllCaps="false"
+                    android:textColor="#f7f8f9"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"/>
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textSize="16dp"
+                    android:background="@drawable/btn_b"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:id="@+id/btn_pcctv_submit"
+                    android:textColor="#f7f8f9"
+                    android:layout_weight="0.1"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_centerHorizontal="true"
+                    />
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"/>
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_b"
+                    android:text="View List"
+                    android:textAllCaps="false"
+                    android:textSize="16dp"
+                    android:textColor="#f7f8f9"
+                    android:layout_weight="0.1"
+                    android:id="@+id/btn_pcctv_vl"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_centerHorizontal="true"
+                    />
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"/>
+            </LinearLayout>
+            <!--<Button-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="42dp"-->
+            <!--android:id="@+id/btn_log_in"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="@drawable/btn_background"-->
+            <!--android:text="Log In"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textSize="18sp"-->
+            <!--android:textColor="#2a3f54"-->
+            <!--android:layout_below="@+id/relativeLayout"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="16dp" />-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/alert_"
+                    android:visibility="gone"
+                    android:src="@drawable/alert"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="#931e1e"
+                    android:id="@+id/tv_error_tr"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:text="enter username "
+                    android:textSize="14sp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

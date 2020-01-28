@@ -1,0 +1,1056 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:text="More Details"
+        android:background="@drawable/btn_b"
+        android:textColor="#fff"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.09"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="PS Name"
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_cctv_pscode"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#50504E" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:padding="0dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Community Group  "
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_cctv_cg"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="#50504E" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:visibility="gone"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Community Name  "
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_cctv_Communityname"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="#50504E" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:visibility="gone"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="No of Cameras Covered  "
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_cctv_NoOfCamerasCoverd"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="#50504E" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="No of Cameras Installed  "
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_cctv_NoCameraInstalled"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="#50504E" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:visibility="gone"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Storage provided in Days   "
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_cctv_StorageinDays"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:background="#50504E" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:visibility="gone"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Date of Installation  "
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_cctv_CameraFixedDate"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#50504E" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="CCTV Type"
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_cctv_type"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#50504E" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="CCTV Capacity"
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_cctv_capacity"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#50504E" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="CCTV Specification"
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_cctv_specification"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#50504E" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Working Status"
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_cctv_workingstatus"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#50504E" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Month &amp; Year"
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_cctv_pno"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#50504E" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Sector No  "
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_cctv_sno"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#50504E" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Funding Type "
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_cctv_lm"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#50504E" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Address "
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_cctv_ln"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#50504E" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Reason Of Not Working "
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_cctv_fixed"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#50504E" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Vendor "
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_cctv_ptz"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#50504E" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="PS Link"
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_cctv_ir"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#50504E" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="CCTV IP Address "
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_cctv_others"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#50504E" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Incharge Name "
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_cctv_InchargeName"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#50504E" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Incharge No "
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_cctv_InchargeNo"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#50504E" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="2dp"
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text="Remarks "
+                    android:textColor="#302828"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_cctv_Remarks"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#50504E" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_cctv_Confm"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_b"
+                    android:text="Close"
+                    android:textAllCaps="false"
+                    android:textColor="#f7f8f9" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
