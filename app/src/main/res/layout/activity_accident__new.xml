@@ -13,7 +13,7 @@
     <!--<include layout="@layout/header" />-->
     <!--</android.support.design.widget.AppBarLayout>-->
     <include layout="@layout/header1" />
-    <include layout="@layout/accident_newchanges" />
+    <include layout="@layout/accident_new_changes" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"

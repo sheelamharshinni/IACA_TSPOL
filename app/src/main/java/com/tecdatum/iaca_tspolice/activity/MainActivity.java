@@ -24,6 +24,7 @@ import com.google.android.material.navigation.NavigationView;
 import com.tecdatum.iaca_tspolice.Adapter.Connectivity;
 
 
+import com.tecdatum.iaca_tspolice.DataEntry.Accident_New_Changes;
 import com.tecdatum.iaca_tspolice.DataEntry.AddNenuSaithamCCTV;
 import com.tecdatum.iaca_tspolice.DataEntry.CCTV_Add;
 import com.tecdatum.iaca_tspolice.DataEntry.Traffic.Landmark_act;
@@ -245,7 +246,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                       //      Toast.makeText(getApplicationContext(), "Access Denied", Toast.LENGTH_SHORT).show();
                         } else {
                             if (S_LevelId.equalsIgnoreCase("5")) {
-                                Intent intent = new Intent(getApplicationContext(), Accident_New.class);
+                                Intent intent = new Intent(getApplicationContext(), Accident_New_Changes.class);
                                 startActivity(intent);
                             } else {
                                 Intent intent = new Intent(getApplicationContext(), AddAccident_View.class);
@@ -256,7 +257,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     } else {
 
                         if (S_LevelId.equalsIgnoreCase("5")) {
-                            Intent intent = new Intent(getApplicationContext(), Accident_New.class);
+                            Intent intent = new Intent(getApplicationContext(), Accident_New_Changes.class);
                             startActivity(intent);
                         } else {
                             Intent intent = new Intent(getApplicationContext(), AddAccident_View.class);
@@ -817,10 +818,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 if (S_LevelId.equalsIgnoreCase("2")) {
                     Toast.makeText(getApplicationContext(), "Access Denied", Toast.LENGTH_SHORT).show();
                 } else {
-                    startActivity(new Intent(MainActivity.this, Accident_New.class));
+                    startActivity(new Intent(MainActivity.this, Accident_New_Changes.class));
                 }
             } else {
-                startActivity(new Intent(MainActivity.this, Accident_New.class));
+                startActivity(new Intent(MainActivity.this, Accident_New_Changes.class));
             }
 
         }

@@ -19,6 +19,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
+
         android:name=".volley.MyApplication"
         android:allowBackup="true"
         android:fullBackupContent="true"
@@ -31,7 +32,7 @@
         tools:ignore="GoogleAppIndexingWarning"
         tools:targetApi="p">
         <activity
-            android:name=".DataEntry.Accident_New"
+            android:name=".DataEntry.Accident_New_Changes"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden"></activity>
 

@@ -94,6 +94,13 @@ public class URLS {
     public static final String GetAccidentSpot = "http://tecdatum.net/TSIACAApi/api/Master/GetAccidentSpot";
     public static final String AccidentDetails = "http://tecdatum.net/TSIACAApi/api/DataEntry/AccidentDetails";
 
+    public static final String GetYear = "http://tecdatum.net/TSIACAApi/api/Master/GetYear";
+
+    public static final String GetAccidentType = "http://tecdatum.net/TSIACAApi/api/Master/GetAccidentType";
+    public static final String VerifyforAccidentDetails = "http://tecdatum.net/TSIACAApi/api/DataEntry/VerifyforAccidentDetails";
+
+    public static final String GetVictimCategories = "http://tecdatum.net/TSIACAApi/api/Master/GetVictimCategories";
+    public static final String GetAccusedCategory = "http://tecdatum.net/TSIACAApi/api/Master/GetAccusedCategory";
 
 //    http://tecdatum.net/TSIACAApi/api/DataEntry/CommunityEntry
 //

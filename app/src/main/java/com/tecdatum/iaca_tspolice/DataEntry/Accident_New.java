@@ -3183,7 +3183,6 @@ public class Accident_New extends AppCompatActivity implements GoogleApiClient.C
         });
     }
 
-
     private void getVictims_Categories_Api() {
 
         JSONObject jsonBody = new JSONObject();
@@ -3515,6 +3514,37 @@ public class Accident_New extends AppCompatActivity implements GoogleApiClient.C
             e.printStackTrace();
         }
     }
+    private void CrimeStatus(ArrayList<Samplemyclass> str1) {
+
+
+        adapter_state = new ArrayAdapter<Samplemyclass>(getApplicationContext(),
+                R.layout.spinner_item, d3);
+
+        detected_.setAdapter(adapter_state);
+        detected_.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                int pos = parent.getSelectedItemPosition();
+                //   if (pos != 0) {
+                S_detected_ = "";
+                Samplemyclass country = (Samplemyclass) parent.getSelectedItem();
+                Ssvc = country.getId();
+                S_detected_id = country.getId();
+                S_detected_ = country.getName();
+                detected_.setSelection(position);
+                //  S_detected_ = (String) detected_.getSelectedItem();
+                Log.e("crime_Genianty", "" + S_detected_);
+                // }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+            }
+        });
+
+    }
+
+
 
     private void getAccidentType_Api() {
 
@@ -3609,35 +3639,8 @@ public class Accident_New extends AppCompatActivity implements GoogleApiClient.C
         }
     }
 
-    private void CrimeStatus(ArrayList<Samplemyclass> str1) {
 
 
-        adapter_state = new ArrayAdapter<Samplemyclass>(getApplicationContext(),
-                R.layout.spinner_item, d3);
-
-        detected_.setAdapter(adapter_state);
-        detected_.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                int pos = parent.getSelectedItemPosition();
-                //   if (pos != 0) {
-                S_detected_ = "";
-                Samplemyclass country = (Samplemyclass) parent.getSelectedItem();
-                Ssvc = country.getId();
-                S_detected_id = country.getId();
-                S_detected_ = country.getName();
-                detected_.setSelection(position);
-                //  S_detected_ = (String) detected_.getSelectedItem();
-                Log.e("crime_Genianty", "" + S_detected_);
-                // }
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-            }
-        });
-
-    }
 
     private void AccidentType(ArrayList<Samplemyclass> Str1) {
 
